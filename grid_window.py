@@ -3,7 +3,7 @@ from PyQt5.QtCore import Qt, QSize
 
 from logic import Logic
 from config import Config
-from field import Field
+from game import Game
 
 class GridWindow(QWidget):
     def __init__(self):
@@ -30,7 +30,7 @@ class GridWindow(QWidget):
         self.moves = QLabel()
         self.turns = QLabel()
 
-        self.table = Field(
+        self.table = Game(
             self.matrix, 
             self.num_rows // 2, 
             self.num_columns // 2, 

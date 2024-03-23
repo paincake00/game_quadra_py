@@ -5,7 +5,7 @@ from PyQt5.QtGui import QColor
 from config import Config
 from logic import Logic
 
-class Field(QTableWidget):
+class Game(QTableWidget):
     def __init__(self, matrix, cur_x, cur_y, rows, moves, turns, level, message):
         super().__init__(len(matrix), len(matrix[0]))
         self.matrix = matrix
